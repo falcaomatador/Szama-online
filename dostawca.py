@@ -17,3 +17,5 @@ class Produkt:
 
         def __str__(self):
             return f'{self.nazwa}, {self.cena} zł'
+
+        
