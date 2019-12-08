@@ -7,4 +7,4 @@ class Dostawca:
 
 class Menu(Dostawca):
     def __init__(self, menu, produkt, cena):
-        super().__init__(menu, produkt, cena)
+        super().__init__(menu, produkt, cena).
