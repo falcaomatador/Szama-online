@@ -28,3 +28,5 @@ ceny_buraki = ['17', '23', '25', '12', '8']
 produkty_buraki = []
 for i in range(len(nazwy_buraki)):
     produkty_buraki.append(Menu('kurczaki', nazwy_buraki[i], ceny_buraki[i]))
+
+
