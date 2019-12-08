@@ -5,8 +5,8 @@ class Dostawca:
         self.min_zam = min_zam
 
 
-class Menu(Dostawca):
-    def __init__(self, menu, produkt, cena):
-        super().__init__(menu, produkt, cena)
-
-
+class Menu:
+    def __init__(self, dostawca, menu, produkt, cena):
+        self.menu = menu
+        self.produkt = produkt
+        self.cena = cena
