@@ -14,11 +14,11 @@ class Koszyk(Konto):
         return f"Twój koszyk: {self.lista_produktow}"
     def usun_zakupy(self):
         self.lista_produktow.clear()
-    def total_koszyk(self):
-        total = 0
-        for produkt in self.lista_produktow:
-            total += self.lista_produktow[produkt] * self.lista_produktow[produkt.cena]
-        return f"Wartość zakupów wynosi {total} zł."
+    def oblicz_wartosc(self):
+        suma = 0
+        for produkt, ilosc in self.produkty.items():
+            suma += produkt.cena * ilosc
+        return f"Wartość zakupów wynosi {suma} zł."
     def dodaj(self, produkt):
         if produkt not in self.lista_produktow:
             self.lista_produktow[produkt] = 1
